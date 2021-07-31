@@ -16,7 +16,13 @@ This is essentially an error which occures during the training of RNNs, when ove
 This mainly occurs during **backpropogation**, where we calculate the derivaties of the network by moving from the outermost layer, back to the initial later. The chain rule is used during this calculation in which the derivates from the final layers are multiplied by the derivatives from early layers. **The gradient keeps diminishing exponentially and therefore the weights and biases are no longer being updated.**
 
 ### Long-Short-Term-Memory Neural Networks
-To avoid the **Vanishing Gradient Problem** the LSTM network was implemented, LSTM networks are type of RNN that are designed to remember long term dependencies by default. LSTM can remember and recall information for a prolonged period of time, which is why they were used in the program as they would recall information and are a good choice due to their recurrnt nature to be used in time-dependency data such as making stock-market predictions
+To avoid the **Vanishing Gradient Problem** the LSTM network was implemented, LSTM networks are type of RNN that are designed to remember long term dependencies by default. LSTM can remember and recall information for a prolonged period of time, which is why they were used in the program as they would recall information and are a good choice due to their recurrnt nature to be used in time-dependency data such as making stock-market predictions.
+LSTM contains gates that allow or block information from passing by, Gates consist of a sigmoid neural net layer along with a pointwise multiplication operation.
+Sigmoid output ranges from 0 – 1:<br>
+•	0 = Don’t allow any data to flow <br>
+•	1 = Allow everything to flow<br>
+
+
 
 
 ## Libraries 
