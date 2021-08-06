@@ -8,7 +8,7 @@ A huge benefit to using machine learning in finance and investing is that these 
 
 
 ## Implementation
-The program uses Recurrent-Neural-Networks, rather than the traditional Deep Neural Networks, or more commonly known as "Vanilla Networks" by enthursiasts. This is because using the regular Feed-Forward Neural Network would map a fixed size input to a fixed size output. These neural networks don't have any time-dependency or memory affect in their data, **however** RNNs do, and therefore when it comes to time dependency data, the use of RNNs would be more preferred over regular ANNs. Although RNNs do have a slight problem....
+The program uses Recurrent-Neural-Networks, rather than the traditional Deep Neural Networks, or more commonly known as "Vanilla Networks" by enthursiasts to perform predictions on historic stock market data. This is because using the regular Feed-Forward Neural Network would map a fixed size input to a fixed size output. These neural networks don't have any time-dependency or memory affect in their data, **however** RNNs do, and therefore when it comes to time dependency data, the use of RNNs would be more preferred over regular ANNs. Although RNNs do have a slight problem....
 
 ### Vanishing Gradient Problem
 This is essentially an error which occures during the training of RNNs, when over multiple epochs of backpropogation, these deep learning methods use what is known as the **gradient descent method** to better fine-tune their weights. Now the more layers that are added, the more the gradients of the loss function approahc zero, making the network hard to train.
