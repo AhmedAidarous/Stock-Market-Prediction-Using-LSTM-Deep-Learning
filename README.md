@@ -22,9 +22,6 @@ Sigmoid output ranges from 0 – 1:<br>
 •	0 = Don’t allow any data to flow <br>
 •	1 = Allow everything to flow<br>
 
-
-
-
 ## Libraries 
 To be able to use this algorithm, the following libraries must be present:
 <br>
@@ -54,7 +51,10 @@ The algorithm relied on using pandas_datareader.data(), and the **yahoo** openso
 for more options on using the pandas_datareader, use this website: 
 https://pandas-datareader.readthedocs.io/en/latest/remote_data.html#remote-data-econdb
 
-
+## Results
+![image](https://user-images.githubusercontent.com/47617364/130025275-413f2068-9d35-4c58-a8ab-02941264d707.png)
+The output is intereactive, and allows you to zoom into the graph through the use of the plotly library.
+<br>
 
 ## Future & Contributions
 Currently working on better optimizing the program, and planning to add features such as:
